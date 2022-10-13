@@ -1,0 +1,9 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/sbendu/projects/cpppiscine/cp01/ex03'
+g++ -Wall -Wextra -Werror -std=c++98 -o objs/HumanA.o -c HumanA.cpp
+g++ -Wall -Wextra -Werror -std=c++98 -o objs/HumanB.o -c HumanB.cpp
+g++ -Wall -Wextra -Werror -std=c++98 -o objs/Weapon.o -c Weapon.cpp
+g++ -Wall -Wextra -Werror -std=c++98 -o objs/main.o -c main.cpp
+g++ -Wall -Wextra -Werror -std=c++98 objs/HumanA.o objs/HumanB.o objs/Weapon.o objs/main.o -o Weapon
+make: Leaving directory '/home/sbendu/projects/cpppiscine/cp01/ex03'
+ 

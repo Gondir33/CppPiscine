@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/sbendu/projects/cpppiscine/cp01'
+make: Leaving directory '/home/sbendu/projects/cpppiscine/cp01'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
