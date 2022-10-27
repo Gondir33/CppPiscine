@@ -5,8 +5,8 @@
 class Point
 {
 private:
-	Fixed	x_;
-	Fixed	y_;
+	const Fixed	x_;
+	const Fixed	y_;
 public:
 
 	void	setX( const Fixed& );
@@ -17,7 +17,7 @@ public:
 	Point( void );
 	Point( const Fixed& , const Fixed& );
 	Point( const Point& );
-	Point&	operator=( const Point& );
+	Point&	operator=( const Point& ) = delete;
 	~Point();
 };
 

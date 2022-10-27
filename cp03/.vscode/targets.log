@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Oct 27 05:55:41 2022
+# Make data base, printed on Thu Oct 27 21:39:30 2022
 
 # Variables
 
@@ -27,7 +27,7 @@ WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /home/sbendu/projects/cpppiscine
+CURDIR := /home/sbendu/projects/cpppiscine/cp03
 # makefile
 SHELL = /bin/sh
 # environment
@@ -51,7 +51,7 @@ PATH = /home/sbendu/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-415cae88-87f7-4138-8663-0ae7c2eb25e6.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-797e9246-4f78-4a5e-af78-241be28e4a55.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -61,7 +61,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # environment
 DISPLAY = localhost:0.0
 # environment
-PWD = /home/sbendu/projects/cpppiscine
+PWD = /home/sbendu/projects/cpppiscine/cp03
 # default
 .LOADED := 
 # environment
@@ -140,10 +140,8 @@ LANG = C
 TERM = xterm-256color
 # environment
 WSL_DISTRO_NAME = Ubuntu
-# environment
-MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=65/1024=6%, Rehash=0, Collisions=4/87=5%
+# Load=64/1024=6%, Rehash=0, Collisions=4/86=5%
 
 # Pattern-specific Variable Values
 
@@ -151,9 +149,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2064, inode 89799): 8 files, no impossibilities.
+# . (device 2064, inode 121582): 7 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 7 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -203,12 +201,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 123 B / avg = 7 B
-# current buf: size = 8162 B / used = 123 B / count = 16 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 15 / storage = 118 B / avg = 7 B
+# current buf: size = 8162 B / used = 118 B / count = 15 / avg = 7 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=1/19=5%
-# Finished Make data base on Thu Oct 27 05:55:41 2022
+# Load=15/8192=0%, Rehash=0, Collisions=1/18=6%
+# Finished Make data base on Thu Oct 27 21:39:30 2022
 
  
