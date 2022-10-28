@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Oct 27 21:39:30 2022
+# Make data base, printed on Thu Oct 27 21:42:44 2022
 
 # Variables
 
@@ -51,7 +51,7 @@ PATH = /home/sbendu/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-797e9246-4f78-4a5e-af78-241be28e4a55.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-601684bf-2402-482f-8553-4aaa3d4346c8.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -65,7 +65,7 @@ PWD = /home/sbendu/projects/cpppiscine/cp03
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/12_interop
+WSL_INTEROP = /run/WSL/1221_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -207,6 +207,6 @@ GNUmakefile:
 # strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
 # Load=15/8192=0%, Rehash=0, Collisions=1/18=6%
-# Finished Make data base on Thu Oct 27 21:39:30 2022
+# Finished Make data base on Thu Oct 27 21:42:44 2022
 
  

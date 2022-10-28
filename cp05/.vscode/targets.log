@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Oct 28 20:32:23 2022
+# Make data base, printed on Fri Oct 28 20:35:27 2022
 
 # Variables
 
@@ -27,7 +27,7 @@ WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /home/sbendu/projects/cpppiscine
+CURDIR := /home/sbendu/projects/cpppiscine/cp05
 # makefile
 SHELL = /bin/sh
 # environment
@@ -51,7 +51,7 @@ PATH = /home/sbendu/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-57fc154c-a396-409e-a85d-9933ed0ca464.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ef06fe2f-728a-42d8-95f7-fe3fe0181861.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -61,7 +61,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # environment
 DISPLAY = localhost:0.0
 # environment
-PWD = /home/sbendu/projects/cpppiscine
+PWD = /home/sbendu/projects/cpppiscine/cp05
 # default
 .LOADED := 
 # environment
@@ -149,9 +149,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 89799): 10 files, no impossibilities.
+# . (device 2064, inode 94733): 4 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 4 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -201,12 +201,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 133 B / avg = 7 B
-# current buf: size = 8162 B / used = 133 B / count = 18 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 12 / storage = 103 B / avg = 8 B
+# current buf: size = 8162 B / used = 103 B / count = 12 / avg = 8 B
 
-# strcache performance: lookups = 21 / hit rate = 14%
+# strcache performance: lookups = 15 / hit rate = 20%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Fri Oct 28 20:32:23 2022
+# Load=12/8192=0%, Rehash=0, Collisions=1/15=7%
+# Finished Make data base on Fri Oct 28 20:35:27 2022
 
  

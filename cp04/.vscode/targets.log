@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Oct 28 20:32:23 2022
+# Make data base, printed on Fri Oct 28 13:43:21 2022
 
 # Variables
 
@@ -27,7 +25,7 @@ WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /home/sbendu/projects/cpppiscine
+CURDIR := /home/sbendu/projects/cpppiscine/cp04
 # makefile
 SHELL = /bin/sh
 # environment
@@ -51,7 +49,7 @@ PATH = /home/sbendu/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-57fc154c-a396-409e-a85d-9933ed0ca464.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-763bd15c-2578-4b02-aff3-b3054711af23.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -61,7 +59,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # environment
 DISPLAY = localhost:0.0
 # environment
-PWD = /home/sbendu/projects/cpppiscine
+PWD = /home/sbendu/projects/cpppiscine/cp04
 # default
 .LOADED := 
 # environment
@@ -149,9 +147,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 89799): 10 files, no impossibilities.
+# . (device 2064, inode 59354): 7 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 7 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -201,12 +199,14 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 133 B / avg = 7 B
-# current buf: size = 8162 B / used = 133 B / count = 18 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 15 / storage = 118 B / avg = 7 B
+# current buf: size = 8162 B / used = 118 B / count = 15 / avg = 7 B
 
-# strcache performance: lookups = 21 / hit rate = 14%
+# strcache performance: lookups = 18 / hit rate = 16%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Fri Oct 28 20:32:23 2022
+# Load=15/8192=0%, Rehash=0, Collisions=1/18=6%
+# Finished Make data base on Fri Oct 28 13:43:21 2022
 
  
+make: *** No rule to make target 'all'.  Stop.
+
