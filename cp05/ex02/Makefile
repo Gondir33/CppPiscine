@@ -1,4 +1,4 @@
-NAME = module06
+NAME = smth
 
 CC = g++
 

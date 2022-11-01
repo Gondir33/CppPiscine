@@ -64,3 +64,13 @@ const char* Bureaucrat::GradeTooHighException::what() const throw() {
 const char* Bureaucrat::GradeTooLowException::what() const throw() {
 	return "Grade is too low expression";
 }
+
+Bureaucrat& Bureaucrat::operator=(const Bureaucrat& copy) {
+	if (this != &copy)
+    {
+        std::cout << "Cannot assign const name_" << '\n';
+        grade_ = copy.grade_;
+    }
+    return (*this);
+}
+Bureaucrat::Bureaucrat(const Bureaucrat& copy) : name_(copy.name_), grade_(copy.grade_) { }

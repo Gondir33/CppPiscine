@@ -22,6 +22,8 @@ public:
 	Bureaucrat&	operator--( );
 	Bureaucrat	operator--( int );
 	
+	Bureaucrat& operator=(const Bureaucrat& copy);
+	Bureaucrat(const Bureaucrat& copy);
 
 	class GradeTooHighException : public std::exception {
 		const char * what() const throw();

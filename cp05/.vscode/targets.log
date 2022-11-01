@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Oct 28 20:35:27 2022
+# Make data base, printed on Tue Nov  1 12:41:13 2022
 
 # Variables
 
@@ -51,7 +51,7 @@ PATH = /home/sbendu/.vscode-server/bin/d045a5eda657f4d7b676dedbfa7aab8207f8a075/
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ef06fe2f-728a-42d8-95f7-fe3fe0181861.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-346d56c4-6656-443a-a4be-e94cbaad2469.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -140,8 +140,10 @@ LANG = C
 TERM = xterm-256color
 # environment
 WSL_DISTRO_NAME = Ubuntu
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=64/1024=6%, Rehash=0, Collisions=4/86=5%
+# Load=65/1024=6%, Rehash=0, Collisions=4/87=5%
 
 # Pattern-specific Variable Values
 
@@ -149,9 +151,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 94733): 4 files, no impossibilities.
+# . (device 2064, inode 94733): 6 files, no impossibilities.
 
-# 4 files, no impossibilities in 1 directories.
+# 6 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -201,12 +203,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 12 / storage = 103 B / avg = 8 B
-# current buf: size = 8162 B / used = 103 B / count = 12 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 14 / storage = 113 B / avg = 8 B
+# current buf: size = 8162 B / used = 113 B / count = 14 / avg = 8 B
 
-# strcache performance: lookups = 15 / hit rate = 20%
+# strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
-# Load=12/8192=0%, Rehash=0, Collisions=1/15=7%
-# Finished Make data base on Fri Oct 28 20:35:27 2022
+# Load=14/8192=0%, Rehash=0, Collisions=1/17=6%
+# Finished Make data base on Tue Nov  1 12:41:13 2022
 
  
