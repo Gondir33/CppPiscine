@@ -7,13 +7,18 @@
 #include <list>
 #include <type_traits>
 #include <algorithm>
+#include <memory>
 
-template <typename T>
+
+template <typename T, typename Alloc = std::allocator<T>>
 class Vector {
 private:
 	T		*arr;
 	size_t	sz;
 	size_t	cap;
+	Alloc	alloc;
+
+	using AllocTraits = std::allocator_traits<Alloc>;
 public:
 
 	size_t	size() {
@@ -32,7 +37,7 @@ public:
 	Vector& operator=(const Vector& copy);
 	T&	operator[](size_t idx);
 
-	Vector(size_t sz, const T& value = T());
+	Vector(size_t sz, const T& value = T(), const Alloc& alloc = Alloc());
 	~Vector();
 };
 
