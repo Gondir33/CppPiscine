@@ -1,6 +1,5 @@
 #include "Vector.hpp"
 
-
 int main( void )
 {
 	std::vector<bool> vb(10);

@@ -88,9 +88,5 @@ void	Vector<T>::resize( size_t n, const T& value ) {
 	}
 }
 
-// vector <bool>
+// vector <bool> работает через _bit_reference
 
-template <>
-class Vector<bool> {
-
-};
