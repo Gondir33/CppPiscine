@@ -83,7 +83,7 @@ void	Vector<T>::resize( size_t n, const T& value ) {
 		}
 	} else {
 		for (size_t i = sz - 1; i > n - 1; --i ) {
-			new (arr + i)->~T();
+			(arr + i)->~T();
 		}
 	}
 }
