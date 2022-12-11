@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Nov  4 14:45:17 2022
+# Make data base, printed on Sun Dec 11 11:03:57 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = ELECTRON_RUN_AS_NODE/w:
+WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -33,7 +33,7 @@ SHELL = /bin/sh
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-_ = /mnt/c/Users/Medved/AppData/Local/Programs/Microsoft VS Code/bin/code
+_ = /home/sbendu/.vscode-server/bin/5235c6bb189b60b01b1f49062f4ffa42384f8c91/node
 # makefile
 MAKEFILE_LIST := 
 # 'override' directive
@@ -47,11 +47,13 @@ VSCODE_CWD = /mnt/c/Users/Medved/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/sbendu/.vscode-server/bin/8fa188b2b301d36553cbc9ce1b0a146ccb93351f/bin/remote-cli:/home/sbendu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Medved/anaconda3:/mnt/c/Users/Medved/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Medved/anaconda3/Library/usr/bin:/mnt/c/Users/Medved/anaconda3/Library/bin:/mnt/c/Users/Medved/anaconda3/Scripts:/mnt/c/Users/Medved/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Medved/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Medved/.dotnet/tools:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.1.3/bin:/snap/bin:/home/sbendu/projects/fract-ol/minilibx-linux
+PATH = /home/sbendu/.vscode-server/bin/5235c6bb189b60b01b1f49062f4ffa42384f8c91/bin/remote-cli:/home/sbendu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Users/Medved/anaconda3:/mnt/c/Users/Medved/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Medved/anaconda3/Library/usr/bin:/mnt/c/Users/Medved/anaconda3/Library/bin:/mnt/c/Users/Medved/anaconda3/Scripts:/mnt/c/Users/Medved/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Medved/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Medved/.dotnet/tools:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.1.3/bin:/snap/bin:/home/sbendu/projects/fract-ol/minilibx-linux
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e95ca685-72ae-4bce-8e77-ea625e65ea85.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-aae27cb2-db35-4bd9-a9bf-e1939270d519.sock
+# environment
+VSCODE_SERVER_TAR = /mnt/c/Users/Medved/AppData/Local/Temp/vscode-remote-wsl/5235c6bb189b60b01b1f49062f4ffa42384f8c91/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -65,7 +67,7 @@ PWD = /home/sbendu/projects/cpppiscine
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/9_interop
+WSL_INTEROP = /run/WSL/13_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -87,7 +89,7 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
+SHLVL = 0
 # default
 MAKE_VERSION := 4.2.1
 # environment
@@ -95,7 +97,7 @@ USER = sbendu
 # makefile
 .DEFAULT_GOAL := 
 # environment
-NAME = Code
+NAME = DESKTOP-NSBPE4J
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -143,7 +145,7 @@ WSL_DISTRO_NAME = Ubuntu
 # environment
 MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=65/1024=6%, Rehash=0, Collisions=4/87=5%
+# Load=66/1024=6%, Rehash=0, Collisions=4/88=5%
 
 # Pattern-specific Variable Values
 
@@ -151,9 +153,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2064, inode 89799): 13 files, no impossibilities.
+# . (device 2064, inode 89799): 14 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -203,12 +205,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 148 B / avg = 7 B
-# current buf: size = 8162 B / used = 148 B / count = 21 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 163 B / avg = 7 B
+# current buf: size = 8162 B / used = 163 B / count = 22 / avg = 7 B
 
-# strcache performance: lookups = 24 / hit rate = 12%
+# strcache performance: lookups = 25 / hit rate = 12%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=1/24=4%
-# Finished Make data base on Fri Nov  4 14:45:17 2022
+# Load=22/8192=0%, Rehash=0, Collisions=1/25=4%
+# Finished Make data base on Sun Dec 11 11:03:57 2022
 
  
