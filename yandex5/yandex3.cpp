@@ -6,19 +6,24 @@
 int main() {
 	int 	N, tmp1, tmp2, M;
 	std::cin >> N;
-	std::unordered_map<int, int> mp;
-	std::unordered_map<int, int> st;
+	std::vector<std::vector<int>> v1;
+	v1.reserve(N);
+	std::vector<std::vector<int>> v2;
+	int j;
 	
 	for (int i = 0; i < N; ++i) {
 		std::cin >> tmp1;
-		std::cin >> mp[tmp1];
+		std::cin >> tmp2;
+		v1.push_back({tmp1, tmp2});
 	}
 	std::cin >> M;
+	v2.reserve(M);
 	for (int i = 0; i < M; ++i) {
 		std::cin >> tmp1;
-		std::cin >> st[tmp1];
+		std::cin >> tmp2;
+		v2.push_back({tmp1, tmp2});
 	}
-	for (auto& it : st) {
-		
+	for (int i = 0; i < v2.size(); ++i) {
+		while (v[])
 	}
 }

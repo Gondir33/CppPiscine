@@ -1,53 +1,27 @@
 #include <iostream>
 #include <unordered_map>
 
-int match_map(std::unordered_map<char, int>& abc, std::unordered_map<char, int>& tmpabc) {
-	int ans = 0;
-
-	for (auto& it : abc) {
-		if (tmpabc[it.first] == it.second)
-			++ans;
-	}
-	return ans;
-}
-
-int down_match_dict(std::unordered_map<char, int>& abc, std::unordered_map<char, int>& tmpabc, char c) {
-	--tmpabc[c];
-	if (abc.count(c) == 1)
-		if (tmpabc[c] == abc[c])
-			return 1;
-	return -1;
-}
-
-int up_match_dict(std::unordered_map<char, int>& abc, std::unordered_map<char, int>& tmpabc, char c) {
-	++tmpabc[c];
-	if (abc.count(c) == 1)
-		if (tmpabc[c] == abc[c])
-			return 1;
-	return -1;
-}
-
 int main() {
-	int	g, S, ans = 0, matchletters;
-	std::string s;
-	std::cin >> g >> S;
-	std::unordered_map<char, int>	abc, tmpabc;
+	int n, k, indexL = 0, indexR = 0;
+	std::cin >> n >> k;
+	std::string	s;
 	std::cin >> s;
-	for (int i = 0; i < g; ++i) {
-		++abc[s[i]];
+	std::unordered_map<char, int>	dict;
+	int l = 0;
+	int r = 0;
+	while (r < s.size()) {
+		++dict[s[r]];
+		if (dict[s[r]] > k) {
+			if (r - l > indexR - indexL) {
+				indexL = l;
+				indexR = r;
+			}
+			while (dict[s[r]] > k) {
+				--dict[s[l]];
+				++l;
+			}
+		}
+		++r;
 	}
-	std::cin >> s;
-	for (int i = 0; i < g; ++i) {
-		++tmpabc[s[i]];
-	}
-	matchletters = match_map(abc, tmpabc);
-	if (matchletters == abc.size())
-		++ans;
-	for (int i = g; i < S; ++i) {
-		matchletters += down_match_dict(abc, tmpabc, s[i - g]);
-		matchletters += up_match_dict(abc, tmpabc, s[i]);
-		if (matchletters == abc.size())
-			++ans;
-	}
-	std::cout << ans;
+	std::cout << indexR - indexL << ' ' << indexL + 1;
 }

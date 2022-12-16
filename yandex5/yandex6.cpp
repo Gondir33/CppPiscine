@@ -1,35 +1,34 @@
 #include <iostream>
-#include <map>
-#include <fstream>
-
-std::map<std::string, std::map<std::string, size_t>> get_params() {
-	std::map<std::string, std::map<std::string, size_t>>	mp;
-	std::ifstream	in("input.txt");
-	std::string		s, s1, s2;
-	int j, i;
-
-	if (in.is_open()) {
-		while (getline(in, s)) {
-			j = 0;
-			i = 0;
-			while (i + j < s.size() && s[i + j] != ' ') ++j;
-			s1 = s.substr(i, j); i += j + 1; j = 0;
-			while (i + j < s.size() && s[i + j] != ' ') ++j;
-			s2 = s.substr(i, j); i += j + 1; j = 0;
-			while (i + j < s.size() && s[i + j] != ' ') ++j;
-			mp[s1][s2] += std::stoi(s.substr(i, j));	
-		}
-	}
-	in.close();
-	return mp;
-}
+#include <unordered_map>
+#include <vector>
 
 int main() {
-	std::map<std::string, std::map<std::string, size_t>>	mp = get_params();
-	for (auto& it1 : mp) {
-		std::cout << it1.first << ":\n";
-		for (auto& it2 : it1.second) {
-			std::cout << it2.first << ' ' << it2.second << '\n';
+	int n, m, tmp, tmp2, sum = 0;
+	std::cin >> n;
+	std::vector<int>	v(n);
+	for (int i = 0; i < n; ++i)
+		std::cin >> v[i];
+	std::cin >> m;
+	std::unordered_map<int, int>	mp;
+	for (int i = 0; i < m; ++i) {
+		std::cin >> tmp;
+		std::cin >> tmp2;
+		if (mp.count(tmp) == 1) {
+			if (tmp2 < mp[tmp]) {
+				mp[tmp] = tmp2;
+			}
 		}
+		else
+			mp[tmp] = tmp2;
 	}
+	for (int i = 0; i < n; ++i) {
+		int min = INT32_MAX;
+		for (auto& it : mp) {
+			if (it.first >= v[i])
+				if (it.second < min)
+					min = it.second;
+		}
+		sum += min;
+	}
+	std::cout << sum;
 }
