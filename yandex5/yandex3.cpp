@@ -2,6 +2,7 @@
 #include <vector>
 #include <unordered_map>
 #include <map>
+// задача на префиксные суммы или нет?
 
 int main() {
 	int 	N, tmp1, tmp2, M;
@@ -24,6 +25,6 @@ int main() {
 		v2.push_back({tmp1, tmp2});
 	}
 	for (int i = 0; i < v2.size(); ++i) {
-		while (v[])
+
 	}
 }
