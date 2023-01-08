@@ -12,19 +12,25 @@ int match_map(std::unordered_map<char, int>& abc, std::unordered_map<char, int>&
 }
 
 int down_match_dict(std::unordered_map<char, int>& abc, std::unordered_map<char, int>& tmpabc, char c) {
+	int ans = 0;
+
+	if (abc.count(c) == 1 && tmpabc[c] == abc[c])
+		ans = -1;
 	--tmpabc[c];
-	if (abc.count(c) == 1)
-		if (tmpabc[c] == abc[c])
-			return 1;
-	return -1;
+	if (abc.count(c) == 1 && tmpabc[c] == abc[c])
+		ans = 1;
+	return ans;
 }
 
 int up_match_dict(std::unordered_map<char, int>& abc, std::unordered_map<char, int>& tmpabc, char c) {
+	int ans = 0;
+
+	if (abc.count(c) == 1 && tmpabc[c] == abc[c])
+		ans = -1;
 	++tmpabc[c];
-	if (abc.count(c) == 1)
-		if (tmpabc[c] == abc[c])
-			return 1;
-	return -1;
+	if (abc.count(c) == 1 && tmpabc[c] == abc[c])
+		ans = 1;
+	return ans;
 }
 
 int main() {
