@@ -1,7 +1,5 @@
 #include <iostream>
 #include <fstream>
-#include <vector>
-#include <unordered_set>
 
 int main() {
 	int K;
@@ -14,24 +12,13 @@ int main() {
 		std::getline(in, s);
 	}
 	in.close();
-	std::unordered_set<char>	hash_set;
-	int l = 0, r = 0, ans = 0;
-	while (l < K) {
-		if (hash_set.count(s[l]) == 1) {
-			++ans;
-		hash_set.insert(s[l]);
-		++l;
+	size_t	prev_len = 0, ans = 0;
+	for (size_t i = K; i < s.size(); ++i) {
+		if (s[i] == s[i - K])
+			++prev_len;
+		else
+			prev_len = 0;
+		ans += prev_len;
 	}
-
-	while (l < s.size()) {
-		if (hash_set.count(s[l]) == 1) {
-			++ans;
-		} else {
-			if (hash_set.size() == K)
-			r = l;
-		}
-	}
-
-
-
+	std::cout << ans;
 }
