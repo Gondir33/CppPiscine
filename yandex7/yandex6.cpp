@@ -1,34 +1,51 @@
 #include <iostream>
-#include <unordered_map>
 #include <vector>
+#include <algorithm>
+#include <unordered_map>
+#include <set>
+
+#define	BORN	1
+#define	DIED	-1
 
 int main() {
-	int n, m, tmp, tmp2, sum = 0;
-	std::cin >> n;
-	std::vector<int>	v(n);
-	for (int i = 0; i < n; ++i)
-		std::cin >> v[i];
-	std::cin >> m;
-	std::unordered_map<int, int>	mp;
-	for (int i = 0; i < m; ++i) {
-		std::cin >> tmp;
-		std::cin >> tmp2;
-		if (mp.count(tmp) == 1) {
-			if (tmp2 < mp[tmp]) {
-				mp[tmp] = tmp2;
+	int N, day1, month1, year1, day2, month2, year2;
+	std::cin >> N;
+	std::vector<std::vector<int>>	people;
+	std::set<int>					ans;
+	for (int i = 1; i <= N; ++i) {
+		std::cin >> day1 >> month1 >> year1;
+		std::cin >> day2 >> month2 >> year2;
+		if (year2 - year1 == 18) {
+			if (month2 - month1 == 0) {
+				if (day2 - day1 > 0) {
+					people.push_back({year1 + 18, month1, day1, BORN, i});
+					people.push_back({year2, month2, day2, DIED, i});
+				}
+			} else if (month2 - month1 > 0) {
+				people.push_back({year1 + 18, month1, day1, BORN, i});
+				people.push_back({year2, month2, day2, DIED, i});
+			}
+		} else if (year2 - year1 > 18) {
+			people.push_back({year1 + 18, month1, day1, BORN, i});
+			people.push_back({year2 , month2, day2, DIED, i});
+		}
+	}
+	std::sort(people.begin(), people.end());
+
+	if (people.size() != 0) {
+		for (size_t i = 0; i < people.size(); ++i) {
+			if (people[i][3] == BORN) {
+				ans.insert(people[i][4]);
+			} else {
+				if (ans.size() != 0) {
+					for (auto& it : ans)
+						std::cout << it << ' ';
+					std::cout << '\n';
+				}
+				ans.clear();
 			}
 		}
-		else
-			mp[tmp] = tmp2;
+	} else {
+		std::cout << 0 << '\n';
 	}
-	for (int i = 0; i < n; ++i) {
-		int min = INT32_MAX;
-		for (auto& it : mp) {
-			if (it.first >= v[i])
-				if (it.second < min)
-					min = it.second;
-		}
-		sum += min;
-	}
-	std::cout << sum;
 }
